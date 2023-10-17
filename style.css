@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --bottom-padding: 1rem;
+    --card-border-radius: 1rem;
+    --ff-p-big: 'Fraunces', serif;
+    --ff-p-small: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background: var(--Cream);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 33rem;
+    display: flex;
+    align-self: center;
+    margin-top: 5rem;
+    margin-bottom: var(--bottom-padding);
+}
+
+
+.card-image img{
+    width:100%;
+    height: 100%;
+    border-top-left-radius: var(--card-border-radius);
+    border-bottom-left-radius: var(--card-border-radius);
+}
+
+.card-content {
+    padding: 1.5em;
+    width: 110%;
+    background: var(--White);
+    border-top-right-radius: var(--card-border-radius);
+    border-bottom-right-radius: var(--card-border-radius);
+}
+
+.perfume {
+    text-transform: uppercase;
+}
+p {
+    font-family: var(--ff-p-small);
+    font-weight: 300;
+    margin-bottom: var(--card-border-radius);
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+}
+
+.card-content h1 {
+    font-family: var(--ff-p-big);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: var(--card-border-radius);
+}
+
+.px-container {
+    display:flex;
+}
+
+.current-px {
+    margin-right: 1rem;
+    color: var(--Dark-cyan);
+    font-family: var(--ff-p-big);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: var(--card-border-radius);
+}
+
+.old-px {
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+
+.cart-btn {
+    background: var(--Dark-cyan);
+    color: var(--White);
+    font-family: var(--ff-p-small);
+    font-weight: 300;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-btn span {
+    margin-left: 0.6rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}

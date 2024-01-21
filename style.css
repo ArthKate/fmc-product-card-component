@@ -104,6 +104,12 @@ button, li {
   border: none;
   border-radius: 0.625rem;
   width: 100%;
+  transition: 0.3ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(158, 45%, 27%);
 }
 
 .btn img {
